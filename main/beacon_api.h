@@ -11,7 +11,7 @@
  * so iBeacon sender and receiver should not run simultaneously */
 #define BEACON_MODE_ADVERTISER      0
 #define BEACON_MODE_SCANNER         1
-
+/* Beacons types supported */
 #define BEACON_TYPE_ALTBEACON       2
 #define BEACON_TYPE_IBEACON         3
 #define BEACON_TYPE_EDDYSTONE_UUID  4
@@ -23,13 +23,16 @@
  * iBeacon data */
 #define ENDIAN_CHANGE_U16(x) ((((x)&0xFF00)>>8) + (((x)&0xFF)<<8))
 
-/* Espressif WeChat official account can be found using WeChat "Yao Yi Yao Zhou Bian", 
- * if device advertises using ESP defined UUID. 
- * Please refer to http://zb.weixin.qq.com for further information. */
+/* Default Values */
 #define DEFAULT_UUID    {0xFD, 0xA5, 0x06, 0x93, 0xA4, 0xE2, 0x4F, 0xB1, 0xAF, 0xCF, 0xC6, 0xEB, 0x11, 0x11, 0x11, 0x11}
 #define DEFAULT_MAJOR   1000
 #define DEFAULT_MINOR   1001
 #define DEFAULT_TX_POWER 0xC5
+
+#define DEFAULT_MIN_ADV_INT 0x20
+#define DEFAULT_MAX_ADV_INT 0x40
+#define DEFAULT_SCAN_INT    0x50
+#define DEFAULT_SCAN_WINDOW 0x30
 
 
 typedef struct {
@@ -51,8 +54,23 @@ typedef struct {
 typedef struct {
     ibeacon_head_t   iBeaconHead;
     ibeacon_vendor_t iBeaconVendor;
-}__attribute__((packed)) beacon_t;
+}__attribute__((packed)) ibeacon_t;
 
+
+/**************************************************** 
+ *
+ ****************************************************/
+bool beacon_config(uint8_t mode, uint8_t type);
+
+/**************************************************** 
+ *
+ ****************************************************/
+void beacon_advertiserConfig(uint8_t minInterval, uint8_t maxInterval);
+
+/**************************************************** 
+ *
+ ****************************************************/
+void beacon_iBeaconDataConfig(uint8_t *uuid, uint16_t major, uint16_t minor, uint8_t txPower);
 
 /**************************************************** 
  *
@@ -67,16 +85,22 @@ bool beacon_isScanner();
 /**************************************************** 
  *
  ****************************************************/
-bool beacon_config(uint8_t mode, uint8_t type);
+void beacon_scannerConfig(uint8_t scanInterval, uint8_t scanWindow);
 
 /**************************************************** 
  *
  ****************************************************/
-bool beacon_AdvertiseConfig(uint16_t minInterval, uint16_t maxInterval);
+ibeacon_t *beacon_getAdvData();
 
 /**************************************************** 
  *
  ****************************************************/
-bool beacon_ScanConfig(uint8_t mode, uint8_t type);
+esp_ble_adv_params_t *beacon_getAdvParams();
+
+/**************************************************** 
+ *
+ ****************************************************/
+esp_ble_scan_params_t *beacon_getScanParams();
+
 
 
