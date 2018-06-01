@@ -57,50 +57,71 @@ typedef struct {
 }__attribute__((packed)) ibeacon_t;
 
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief Set Beacons variables to work as a advertiser or scanner
+ *        In the case of advertiser it can be set to publish as  
+ *        ATLBeacon, iBeacon or Eddystone.
+ * @param  mode: 
+ * @param 
+ * @return
+ */
 bool beacon_config(uint8_t mode, uint8_t type);
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief 
+ * @param
+ * @return
+ */
 void beacon_advertiserConfig(uint8_t minInterval, uint8_t maxInterval);
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief 
+ * @param
+ * @return
+ */
 void beacon_iBeaconDataConfig(uint8_t *uuid, uint16_t major, uint16_t minor, uint8_t txPower);
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief 
+ * @param
+ * @return
+ */
 bool beacon_isAdvertiser();
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief 
+ * @param
+ * @return
+ */
 bool beacon_isScanner();
 
-/**************************************************** 
- *
- ****************************************************/
+/**
+ * @brief 
+ * @param
+ * @return
+ */
 void beacon_scannerConfig(uint8_t scanInterval, uint8_t scanWindow);
 
-/**************************************************** 
- *
- ****************************************************/
-ibeacon_t *beacon_getAdvData();
+/**
+ * @brief 
+ * @param
+ * @return
+ */
+void beacon_getAdvData(ibeacon_t *advData);
 
-/**************************************************** 
- *
- ****************************************************/
-esp_ble_adv_params_t *beacon_getAdvParams();
+/**
+ * @brief 
+ * @param
+ * @return
+ */
+void beacon_getAdvParams(esp_ble_adv_params_t advParams);
 
-/**************************************************** 
- *
- ****************************************************/
-esp_ble_scan_params_t *beacon_getScanParams();
+/**
+ * @brief 
+ * @param
+ * @return
+ */
+void beacon_getScanParams(esp_ble_scan_params_t scanParams);
 
 
 
