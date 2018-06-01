@@ -18,6 +18,13 @@
 static const char* DEMO_TAG = "BEACON";
 
 /**********************************************************************************
+ *                      Global variables
+ **********************************************************************************/
+ibeacon_t beacon_adv_data;
+esp_ble_adv_params_t ble_adv_params;
+esp_ble_scan_params_t ble_scan_params; 
+
+/**********************************************************************************
  *                      Static functions
  **********************************************************************************/
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
@@ -27,6 +34,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
     switch (event) {
     case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT:{
         if( beacon_isAdvertiser() ){
+            beacon_getAdvParams(&ble_adv_params);
             esp_ble_gap_start_advertising(&ble_adv_params);
         }
         break;
@@ -130,22 +138,18 @@ void app_main()
     esp_bt_controller_enable(ESP_BT_MODE_BLE);
 
     ble_beacon_init();
+    beacon_config(BEACON_MODE_ADVERTISER,BEACON_TYPE_IBEACON);
 
     /* set scan parameters */
     if( beacon_isScanner() ){
+        beacon_getScanParams(&ble_scan_params);
         esp_ble_gap_set_scan_params(&ble_scan_params);
     }
     
     /* set advertising parameters */
     if( beacon_isAdvertiser() ){
-        esp_ble_ibeacon_t ibeacon_adv_data;
-        esp_err_t status = esp_ble_config_ibeacon_data (&vendor_config, &ibeacon_adv_data);
-        if (status == ESP_OK){
-            esp_ble_gap_config_adv_data_raw((uint8_t*)&ibeacon_adv_data, sizeof(ibeacon_adv_data));
-        }
-        else {
-            ESP_LOGE(DEMO_TAG, "Config iBeacon data failed: %s\n", esp_err_to_name(status));
-        }
+        beacon_getAdvData(&beacon_adv_data);
+        esp_ble_gap_config_adv_data_raw((uint8_t*)&beacon_adv_data, sizeof(beacon_adv_data));
     }
     
 
