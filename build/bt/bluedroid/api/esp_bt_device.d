@@ -28,7 +28,7 @@ bluedroid/api/esp_bt_device.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/sched.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/api/include/api/esp_bt_defs.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/api/include/api/esp_bt_main.h \
@@ -169,7 +169,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

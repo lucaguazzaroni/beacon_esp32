@@ -2,7 +2,7 @@ bluedroid/bta/dm/bta_dm_ci.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/bta/dm/bta_dm_ci.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/bta/include/bta/bta_sys.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/bt_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -112,7 +112,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/bta/include/bta
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/bt_types.h:
 

@@ -11,7 +11,7 @@ library/ssl_cert.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/internal/ssl_stack.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/platform/ssl_opt.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/platform/ssl_port.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -67,7 +67,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/internal/ssl
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/openssl/include/platform/ssl_port.h:
 

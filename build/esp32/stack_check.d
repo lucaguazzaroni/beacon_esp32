@@ -1,6 +1,6 @@
 stack_check.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/stack_check.c \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_system.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -57,7 +57,7 @@ stack_check.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/touch_channel.h
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_system.h:
 

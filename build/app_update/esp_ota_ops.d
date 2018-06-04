@@ -26,7 +26,7 @@ esp_ota_ops.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -151,7 +151,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

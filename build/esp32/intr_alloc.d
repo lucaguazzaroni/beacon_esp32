@@ -1,6 +1,6 @@
 intr_alloc.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/intr_alloc.c \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/features.h \
@@ -83,7 +83,7 @@ intr_alloc.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/log/include/esp_log.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/log/include/esp_log_internal.h
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h:
 

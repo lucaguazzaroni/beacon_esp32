@@ -1,6 +1,6 @@
 spiram_psram.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/spiram_psram.c \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/_ansi.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/newlib.h \
@@ -71,7 +71,7 @@ spiram_psram.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/queue.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/driver/include/driver/periph_ctrl.h
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h:
 

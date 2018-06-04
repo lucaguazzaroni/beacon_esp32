@@ -24,7 +24,7 @@ port/minicheck.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/setjmp.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/setjmp.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/expat/include/expat/internal.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/expat/port/include/minicheck.h
@@ -77,7 +77,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/setjm
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

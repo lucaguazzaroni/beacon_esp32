@@ -20,7 +20,7 @@ esp_err_to_name.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/stdlib.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/alloca.h \
@@ -176,7 +176,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_assert.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h:
 

@@ -25,7 +25,7 @@ cache_err_int.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/alloca.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/hal.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -130,7 +130,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/Fr
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

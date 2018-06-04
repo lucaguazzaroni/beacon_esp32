@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := ble_altbeacon
+PROJECT_NAME := beacon_esp32
 
 COMPONENT_ADD_INCLUDEDIRS := components/include
 

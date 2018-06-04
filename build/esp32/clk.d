@@ -20,7 +20,7 @@ clk.o: C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/clk.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/syslimits.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/endian.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/param.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_attr.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/log/include/esp_log.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -108,7 +108,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/endia
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/param.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_attr.h:
 

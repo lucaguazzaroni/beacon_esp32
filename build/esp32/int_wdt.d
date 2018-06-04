@@ -1,6 +1,6 @@
 int_wdt.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/int_wdt.c \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/features.h \
@@ -89,7 +89,7 @@ int_wdt.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_int_wdt.h
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h:
 

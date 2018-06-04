@@ -9,7 +9,7 @@ spi_flash_rom_patch.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/spi_flash.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
- c:\users\pasante\documents\esp32\ble_ibeacon\build\include\sdkconfig.h
+ c:\users\pasante\documents\esp32\beacon_esp32\build\include\sdkconfig.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -29,5 +29,5 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/spi_flash.
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
-c:\users\pasante\documents\esp32\ble_ibeacon\build\include\sdkconfig.h:
+c:\users\pasante\documents\esp32\beacon_esp32\build\include\sdkconfig.h:
 /c/Users/pasante/Documents/ESP32/esp-idf/components/spi_flash/./spi_flash_rom_patch.c:

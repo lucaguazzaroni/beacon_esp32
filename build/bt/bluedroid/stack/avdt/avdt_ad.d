@@ -1,7 +1,7 @@
 bluedroid/stack/avdt/avdt_ad.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/avdt/avdt_ad.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_trace.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/_ansi.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/newlib.h \
@@ -55,7 +55,7 @@ bluedroid/stack/avdt/avdt_ad.o: \
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_trace.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdio.h:
 

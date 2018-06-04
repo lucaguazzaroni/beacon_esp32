@@ -11,7 +11,7 @@ src/ff.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/syslimits.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/endian.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/param.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/reent.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/_ansi.h \
@@ -112,7 +112,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/endia
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/param.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

@@ -1,7 +1,7 @@
 pm_trace.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/pm_trace.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/pm_trace.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/driver/include/driver/gpio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
@@ -43,7 +43,7 @@ pm_trace.o: \
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/pm_trace.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/driver/include/driver/gpio.h:
 

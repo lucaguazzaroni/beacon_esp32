@@ -31,7 +31,7 @@ lib/http_auth.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/queue.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_interface.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
@@ -185,7 +185,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

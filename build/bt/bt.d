@@ -22,7 +22,7 @@ bt.o: C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bt.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/esp_heap_caps.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -148,7 +148,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/esp_heap_caps.h:
 

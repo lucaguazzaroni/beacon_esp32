@@ -18,7 +18,7 @@ vfs.o: C:/Users/pasante/Documents/ESP32/esp-idf/components/vfs/vfs.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/errno.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/fcntl.h \
@@ -136,7 +136,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

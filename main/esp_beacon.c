@@ -5,19 +5,6 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
-
-
-
-/****************************************************************************
-*
-* This file is for iBeacon demo. It supports both iBeacon sender and receiver
-* which is distinguished by macros IBEACON_SENDER and IBEACON_RECEIVER,
-*
-* iBeacon is a trademark of Apple Inc. Before building devices which use iBeacon technology,
-* visit https://developer.apple.com/ibeacon/ to obtain a license.
-*
-****************************************************************************/
-
 #include <stdint.h>
 #include <string.h>
 #include <stdbool.h>

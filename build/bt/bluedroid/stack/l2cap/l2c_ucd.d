@@ -23,7 +23,7 @@ bluedroid/stack/l2cap/l2c_ucd.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/hcidefs.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/dyn_mem.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_trace.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdio.h \
@@ -154,7 +154,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/s
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/dyn_mem.h:
 

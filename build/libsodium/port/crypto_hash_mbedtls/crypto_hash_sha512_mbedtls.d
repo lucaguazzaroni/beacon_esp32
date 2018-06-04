@@ -22,7 +22,7 @@ port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/limits.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/string.h \
@@ -72,7 +72,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbed
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

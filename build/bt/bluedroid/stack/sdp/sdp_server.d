@@ -24,7 +24,7 @@ bluedroid/stack/sdp/sdp_server.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/alloca.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/esp_heap_caps.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/multi_heap.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/btu.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/dyn_mem.h \
@@ -98,7 +98,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/esp_heap_caps.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/multi_heap.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/btu.h:
 

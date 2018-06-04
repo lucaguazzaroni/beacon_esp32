@@ -5,19 +5,6 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
-
-
-
-/****************************************************************************
-*
-* This file is for iBeacon definitions. It supports both iBeacon sender and receiver
-* which is distinguished by macros IBEACON_SENDER and IBEACON_RECEIVER,
-*
-* iBeacon is a trademark of Apple Inc. Before building devices which use iBeacon technology,
-* visit https://developer.apple.com/ibeacon/ to obtain a license.
-*
-****************************************************************************/
-
 #include <stdint.h>
 #include <string.h>
 #include <stdbool.h>
@@ -27,8 +14,9 @@
 #include "esp_gattc_api.h"
 
 
-/* Because current ESP IDF version doesn't support scan and adv simultaneously,
- * so iBeacon sender and receiver should not run simultaneously */
+/* For ALTBeacon packet format, please refer to Apple https://github.com/AltBeacon/spec
+ */
+
 #define ALTBEACON_SENDER      0
 #define ALTBEACON_RECEIVER    1
 #define ALTBEACON_MODE ALTBEACON_SENDER
@@ -36,12 +24,13 @@
 /* Major and Minor part are stored in big endian mode in iBeacon packet,
  * need to use this macro to transfer while creating or processing
  * iBeacon data */
-#define ENDIAN_CHANGE_U16(x) ((((x)&0xFF00)>>8) + (((x)&0xFF)<<8))
+//#define ENDIAN_CHANGE_U16(x) ((((x)&0xFF00)>>8) + (((x)&0xFF)<<8))
 
-/* Espressif WeChat official account can be found using WeChat "Yao Yi Yao Zhou Bian", 
- * if device advertises using ESP defined UUID. 
- * Please refer to http://zb.weixin.qq.com for further information. */
-#define BEACON_ID    {0xFD, 0xA5, 0x06, 0x93, 0xA4, 0xE2, 0x4F, 0xB1, 0xAF, 0xCF, 0xC6, 0xEB, 0x11, 0x11, 0x11, 0x11}
+/* The big endian representation of the beacon identifier. For interoperability purposes, 
+ * the first 16+ bytes of the beacon identifier should be unique to the advertiser's organizational unit.
+ * Any remaining bytes of the beacon identifier may be subdivided as needed for the use case.
+ */
+#define BEACON_ID       {0xFD, 0xA5, 0x06, 0x93, 0xA4, 0xE2, 0x4F, 0xB1, 0xAF, 0xCF, 0xC6, 0xEB, 0x11, 0x11, 0x11, 0x11}
 #define BEACON_ID_EXTRA {0x00,0x00,0x00,0x00}
 
 
@@ -66,9 +55,6 @@ typedef struct {
     esp_ble_altbeacon_vendor_t altbeacon_vendor;
 }__attribute__((packed)) esp_ble_altbeacon_t;
 
-
-/* For iBeacon packet format, please refer to Apple "Proximity Beacon Specification" doc */
-/* Constant part of iBeacon data */
 extern esp_ble_altbeacon_head_t altbeacon_common_head;
 
 bool esp_ble_is_ibeacon_packet (uint8_t *adv_data, uint8_t adv_data_len);

@@ -29,7 +29,7 @@ spiffs/src/spiffs_check.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/string.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/unistd.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/unistd.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/log/include/esp_log.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -97,7 +97,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/unistd.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/unistd.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/log/include/esp_log.h:
 

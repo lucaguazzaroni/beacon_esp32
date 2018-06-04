@@ -31,7 +31,7 @@ nghttp2/lib/nghttp2_rcbuf.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/nghttp/port/include/nghttp2/nghttp2ver.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
@@ -98,7 +98,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/nghttp/port/include/nghttp2/
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

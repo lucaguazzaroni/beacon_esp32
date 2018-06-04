@@ -1,7 +1,7 @@
 libsodium/src/libsodium/sodium/utils.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/libsodium/libsodium/src/libsodium/sodium/utils.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/ieeefp.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/_ansi.h \
@@ -39,7 +39,7 @@ libsodium/src/libsodium/sodium/utils.o: \
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h:
 

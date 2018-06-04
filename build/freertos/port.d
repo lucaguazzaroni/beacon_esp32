@@ -28,7 +28,7 @@ port.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/config/system.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/simcall.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
@@ -146,7 +146,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/xtensa/simcall
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

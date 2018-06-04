@@ -24,7 +24,7 @@ phy_init.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/rtc.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -144,7 +144,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_assert.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

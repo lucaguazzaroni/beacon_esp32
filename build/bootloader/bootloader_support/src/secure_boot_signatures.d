@@ -1,6 +1,6 @@
 src/secure_boot_signatures.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bootloader_support/src/secure_boot_signatures.c \
- c:\users\pasante\documents\esp32\ble_ibeacon\build\include\sdkconfig.h \
+ c:\users\pasante\documents\esp32\beacon_esp32\build\include\sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -19,7 +19,7 @@ src/secure_boot_signatures.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/micro-ecc/micro-ecc/uECC.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/sha.h
 
-c:\users\pasante\documents\esp32\ble_ibeacon\build\include\sdkconfig.h:
+c:\users\pasante\documents\esp32\beacon_esp32\build\include\sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h:
 

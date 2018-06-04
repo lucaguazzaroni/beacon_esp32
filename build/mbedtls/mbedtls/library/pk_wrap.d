@@ -1,7 +1,7 @@
 mbedtls/library/pk_wrap.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/library/pk_wrap.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/limits.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/newlib.h \
@@ -46,7 +46,7 @@ mbedtls/library/pk_wrap.o: \
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

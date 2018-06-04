@@ -22,7 +22,7 @@ bluedroid/hci/buffer_allocator.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/multi_heap.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/hci/include/hci/buffer_allocator.h:
 
@@ -68,5 +68,5 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/heap/include/multi_heap.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 /c/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/hci/buffer_allocator.c:

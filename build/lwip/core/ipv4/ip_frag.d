@@ -32,7 +32,7 @@ core/ipv4/ip_frag.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/vfs/include/sys/ioctl.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/sys/select.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_task.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_system.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -187,7 +187,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/sys/
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_task.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_system.h:
 

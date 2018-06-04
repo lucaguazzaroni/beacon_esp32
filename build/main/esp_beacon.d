@@ -1,5 +1,5 @@
 esp_beacon.o: \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/main/esp_beacon.c \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/main/esp_beacon.c \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/features.h \
@@ -26,7 +26,7 @@ esp_beacon.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/nvs_flash/include/nvs.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/machine/stdlib.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/alloca.h \
@@ -90,7 +90,7 @@ esp_beacon.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/main/esp_altbeacon_api.h
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/main/esp_altbeacon_api.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h:
 
@@ -144,7 +144,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_err.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdlib.h:
 
@@ -272,5 +272,5 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xt
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/main/esp_altbeacon_api.h:
-/c/Users/pasante/Documents/ESP32/ble_ibeacon/main/./esp_beacon.c:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/main/esp_altbeacon_api.h:
+/c/Users/pasante/Documents/ESP32/beacon_esp32/main/./esp_beacon.c:

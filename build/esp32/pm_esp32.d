@@ -32,7 +32,7 @@ pm_esp32.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/sched.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp_pm.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/esp32/pm.h \
@@ -163,7 +163,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/assert.h:
 

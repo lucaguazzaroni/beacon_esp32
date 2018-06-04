@@ -23,7 +23,7 @@ bluedroid/btc/profile/esp/blufi/blufi_prf.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/sched.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h \
- C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/bt_types.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/dyn_mem.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_trace.h \
@@ -167,7 +167,7 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/common/include/common/bt_target.h:
 
-C:/Users/pasante/Documents/ESP32/ble_ibeacon/build/include/sdkconfig.h:
+C:/Users/pasante/Documents/ESP32/beacon_esp32/build/include/sdkconfig.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/bt/bluedroid/stack/include/stack/bt_types.h:
 
