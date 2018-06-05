@@ -17,12 +17,6 @@
 
 static const char* TAG = "BEACON_BLE_API";
 
-#define BEACON_MODE_ADVERTISER 0
-#define BEACON_MODE_SCANNER    1
-
-#define BEACON_TYPE_ALTBEACON 2
-#define BEACON_TYPE_IBEACON	  3	
-
 ///Declare static functions
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 
@@ -61,7 +55,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 
     switch (event) {
     case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT:{
-		if( mode == BEACON_MODE_ADVERTISER){
+		if(mode == BEACON_MODE_ADVERTISER){
     		esp_ble_gap_start_advertising(&ble_adv_params);
 		}
         break;
@@ -142,7 +136,6 @@ void beacon_ble_init(void){
 
     esp_bluedroid_init();
     esp_bluedroid_enable();
-    ble_ibeacon_appRegister();
 
     ESP_LOGI(TAG, "register callback");
 
@@ -164,14 +157,14 @@ void beacon_advertiser_config(uint8_t adv_int_min, uint8_t adv_int_max){
 }
 
 uint8_t beacon_is_advertiser(void){
-	if(beacon_mode == BEACON_MODE_ADVERTISER){
+	if(mode == BEACON_MODE_ADVERTISER){
 		return 1;
 	} else {
 		return 0;
 	}
 }
 
-uint8_t beacon_advertiser_start(uint8_t *raw_advertising_data){
+void beacon_advertiser_start(uint8_t *raw_advertising_data){
 	esp_ble_gap_config_adv_data_raw(raw_advertising_data, sizeof(raw_advertising_data));
 }
 
@@ -181,7 +174,7 @@ void beacon_scanner_config(uint8_t scan_window, uint8_t scan_interval){
 }
 
 uint8_t beacon_is_scanner(void){
-	if(beacon_mode == BEACON_MODE_SCANNER){
+	if(mode == BEACON_MODE_SCANNER){
 		return 1;
 	} else {
 		return 0;

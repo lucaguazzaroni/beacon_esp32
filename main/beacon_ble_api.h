@@ -3,6 +3,12 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+#define BEACON_MODE_ADVERTISER 0
+#define BEACON_MODE_SCANNER    1
+
+#define BEACON_TYPE_ALTBEACON 2
+#define BEACON_TYPE_IBEACON	  3	
+
 /**
  */
 void beacon_ble_init(void);
@@ -21,7 +27,7 @@ uint8_t beacon_is_advertiser(void);
 
 /**
  */
-uint8_t beacon_advertiser_start(uint8_t *raw_advertising_data);
+void beacon_advertiser_start(uint8_t *raw_advertising_data);
 
 /**
  */

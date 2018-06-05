@@ -26,8 +26,7 @@
  * the first 16+ bytes of the beacon identifier should be unique to the advertiser's organizational unit.
  * Any remaining bytes of the beacon identifier may be subdivided as needed for the use case.
  */
-#define BEACON_ID       {0xFD, 0xA5, 0x06, 0x93, 0xA4, 0xE2, 0x4F, 0xB1, 0xAF, 0xCF, 0xC6, 0xEB, 0x11, 0x11, 0x11, 0x11}
-#define BEACON_ID_EXTRA {0x00,0x00,0x00,0x00}
+
 
 
 typedef struct {
@@ -51,7 +50,6 @@ typedef struct {
     esp_ble_altbeacon_vendor_t altbeacon_vendor;
 }__attribute__((packed)) esp_ble_altbeacon_t;
 
-extern esp_ble_altbeacon_head_t altbeacon_common_head;
 
 /**
  */
