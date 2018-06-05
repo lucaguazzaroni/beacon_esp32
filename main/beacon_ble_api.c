@@ -32,6 +32,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 
 static uint8_t mode = BEACON_MODE_ADVERTISER;
 static uint8_t type = BEACON_TYPE_ALTBEACON;
+static uint32_t scan_duration = 0;	//the unit of the duration is second, 0 means scan permanently
 
 static esp_ble_scan_params_t ble_scan_params = {
     .scan_type              = BLE_SCAN_TYPE_ACTIVE,
@@ -41,7 +42,6 @@ static esp_ble_scan_params_t ble_scan_params = {
     .scan_window            = 0x30,
     .scan_duplicate         = BLE_SCAN_DUPLICATE_DISABLE
 };
-
 
 static esp_ble_adv_params_t ble_adv_params = {
     .adv_int_min        = 0x20,
@@ -55,24 +55,21 @@ static esp_ble_adv_params_t ble_adv_params = {
 /** 
 	Private functions
  */
-
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 {
     esp_err_t err;
 
     switch (event) {
     case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT:{
-#if (ALTBEACON_MODE == ALTBEACON_SENDER)
-        esp_ble_gap_start_advertising(&ble_adv_params);
-#endif
+		if( mode == BEACON_MODE_ADVERTISER){
+    		esp_ble_gap_start_advertising(&ble_adv_params);
+		}
         break;
     }
     case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT: {
-#if (ALTBEACON_MODE == ALTBEACON_RECEIVER)
-        //the unit of the duration is second, 0 means scan permanently
-        uint32_t duration = 0;
-        esp_ble_gap_start_scanning(duration);
-#endif
+    	if(mode == BEACON_MODE_SCANNER){
+    		esp_ble_gap_start_scanning(scan_duration);
+    	}
         break;
     }
     case ESP_GAP_BLE_SCAN_START_COMPLETE_EVT:
@@ -134,7 +131,6 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
         break;
     }
 }
-
 
 void beacon_ble_init(void){
     esp_err_t status;

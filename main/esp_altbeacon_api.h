@@ -14,12 +14,8 @@
 #include "esp_gattc_api.h"
 
 
-/* For ALTBeacon packet format, please refer to Apple https://github.com/AltBeacon/spec
+/* For ALTBeacon packet format, please refer to https://github.com/AltBeacon/spec
  */
-
-#define ALTBEACON_SENDER      0
-#define ALTBEACON_RECEIVER    1
-#define ALTBEACON_MODE ALTBEACON_SENDER
 
 /* Major and Minor part are stored in big endian mode in iBeacon packet,
  * need to use this macro to transfer while creating or processing
@@ -57,6 +53,10 @@ typedef struct {
 
 extern esp_ble_altbeacon_head_t altbeacon_common_head;
 
-bool esp_ble_is_ibeacon_packet (uint8_t *adv_data, uint8_t adv_data_len);
+/**
+ */
+void altbeacon_config_data(uint8_t *uuid, uint8_t *uuid_extra, uint8_t ref_rssi, uint8_t mfg_reserved);
 
-esp_err_t esp_ble_config_altbeacon_data (esp_ble_altbeacon_vendor_t *vendor_config, esp_ble_altbeacon_t *altbeacon_adv_data);
+/**
+ */
+uint8_t *altbeacon_get_adv_data(void);

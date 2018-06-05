@@ -46,27 +46,26 @@ esp_ble_altbeacon_vendor_t vendor_config = {
     .mfg_reserved = 0x11
 };
 
-bool esp_ble_is_ibeacon_packet (uint8_t *adv_data, uint8_t adv_data_len){
-    bool result = false;
+esp_ble_altbeacon_t raw_advertising_data;
 
-    if ((adv_data != NULL) && (adv_data_len == 0x1E)){
-        if (!memcmp(adv_data, (uint8_t*)&altbeacon_common_head, sizeof(altbeacon_common_head))){
-            result = true;
-        }
+void altbeacon_config_data(uint8_t *uuid, uint8_t *uuid_extra, uint8_t ref_rssi, uint8_t mfg_reserved){
+    if( uuid!=NULL && sizeof(uuid)==16  ){
+        memcpy( vendor_config.beacon_id, uuid, 16);
+    }   
+    if( uuid_extra!=NULL && sizeof(uuid_extra)==4 ){
+        memcpy( vendor_config.beacon_id_extra, uuid_extra, 4);
     }
+    vendor_config.reference_rssi = ref_rssi;
+    vendor_config.mfg_reserved = mfg_reserved;
 
-    return result;
 }
 
-esp_err_t esp_ble_config_altbeacon_data (esp_ble_altbeacon_vendor_t *vendor_config, esp_ble_altbeacon_t *altbeacon_adv_data){
-    if ((vendor_config == NULL) || (altbeacon_adv_data == NULL) || (!memcmp(vendor_config->beacon_id, uuid_zeros, sizeof(uuid_zeros)))){
-        return ESP_ERR_INVALID_ARG;
-    }
+uint8_t *altbeacon_get_adv_data(void){
+    memcpy(&raw_advertising_data->altbeacon_head, &altbeacon_common_head, sizeof(esp_ble_altbeacon_head_t));
+    memcpy(&raw_advertising_data->altbeacon_vendor, &vendor_config, sizeof(esp_ble_altbeacon_vendor_t));
 
-    memcpy(&altbeacon_adv_data->altbeacon_head, &altbeacon_common_head, sizeof(esp_ble_altbeacon_head_t));
-    memcpy(&altbeacon_adv_data->altbeacon_vendor, vendor_config, sizeof(esp_ble_altbeacon_vendor_t));
-
-    return ESP_OK;
+    return (uint8_t *)&raw_advertising_data;
 }
+
 
 
