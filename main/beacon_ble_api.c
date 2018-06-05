@@ -17,9 +17,14 @@
 
 static const char* TAG = "BEACON_BLE_API";
 
+#define BEACON_MODE_ADVERTISER 0
+#define BEACON_MODE_SCANNER    1
+
+#define BEACON_TYPE_ALTBEACON 2
+#define BEACON_TYPE_IBEACON	  3	
+
 ///Declare static functions
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
-
 
 /**
 	Private variables
@@ -131,8 +136,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 }
 
 
-void beacon_ble_init(void)
-{
+void beacon_ble_init(void){
     esp_err_t status;
 
 	ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_CLASSIC_BT));
@@ -153,8 +157,9 @@ void beacon_ble_init(void)
     }
 }
 
-void beacon_ble_config(uint8_t mode, uint8_t type){
-
+void beacon_ble_config(uint8_t beacon_mode, uint8_t beacon_type){
+	mode = beacon_mode;
+	type = beacon_type;
 }
 
 void beacon_advertiser_config(uint8_t adv_int_min, uint8_t adv_int_max){
@@ -162,7 +167,31 @@ void beacon_advertiser_config(uint8_t adv_int_min, uint8_t adv_int_max){
 	ble_adv_params.adv_int_max = adv_int_max;
 }
 
+uint8_t beacon_is_advertiser(void){
+	if(beacon_mode == BEACON_MODE_ADVERTISER){
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
+uint8_t beacon_advertiser_start(uint8_t *raw_advertising_data){
+	esp_ble_gap_config_adv_data_raw(raw_advertising_data, sizeof(raw_advertising_data));
+}
+
 void beacon_scanner_config(uint8_t scan_window, uint8_t scan_interval){
 	ble_scan_params.scan_window = scan_window;
 	ble_scan_params.scan_interval = scan_interval;
+}
+
+uint8_t beacon_is_scanner(void){
+	if(beacon_mode == BEACON_MODE_SCANNER){
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
+void beacon_scanner_start(void){
+	esp_ble_gap_set_scan_params(&ble_scan_params);
 }
