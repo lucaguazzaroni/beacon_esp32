@@ -90,6 +90,7 @@ esp_beacon.o: \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
+ C:/Users/pasante/Documents/ESP32/beacon_esp32/main/beacon_ble_api.h \
  C:/Users/pasante/Documents/ESP32/beacon_esp32/main/esp_altbeacon_api.h
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/newlib/include/stdint.h:
@@ -271,6 +272,8 @@ C:/Users/pasante/Documents/ESP32/esp-idf/components/esp32/include/rom/ets_sys.h:
 C:/Users/pasante/Documents/ESP32/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 C:/Users/pasante/Documents/ESP32/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
+
+C:/Users/pasante/Documents/ESP32/beacon_esp32/main/beacon_ble_api.h:
 
 C:/Users/pasante/Documents/ESP32/beacon_esp32/main/esp_altbeacon_api.h:
 /c/Users/pasante/Documents/ESP32/beacon_esp32/main/./esp_beacon.c:
