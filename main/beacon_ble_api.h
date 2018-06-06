@@ -27,7 +27,7 @@ uint8_t beacon_is_advertiser(void);
 
 /**
  */
-void beacon_advertiser_start(uint8_t *raw_advertising_data);
+void beacon_advertiser_start(uint8_t *raw_adv_data, uint8_t raw_adv_data_size);
 
 /**
  */

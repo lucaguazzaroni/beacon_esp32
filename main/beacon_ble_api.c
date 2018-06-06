@@ -164,8 +164,8 @@ uint8_t beacon_is_advertiser(void){
 	}
 }
 
-void beacon_advertiser_start(uint8_t *raw_advertising_data){
-	esp_ble_gap_config_adv_data_raw(raw_advertising_data, sizeof(raw_advertising_data));
+void beacon_advertiser_start(uint8_t *raw_adv_data, uint8_t raw_adv_data_size){
+	esp_ble_gap_config_adv_data_raw(raw_adv_data, raw_adv_data_size);
 }
 
 void beacon_scanner_config(uint8_t scan_window, uint8_t scan_interval){

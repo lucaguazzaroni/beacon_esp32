@@ -27,8 +27,6 @@
  * Any remaining bytes of the beacon identifier may be subdivided as needed for the use case.
  */
 
-
-
 typedef struct {
     uint8_t flags[3];
     uint8_t length;
@@ -57,4 +55,8 @@ void altbeacon_config_data(uint8_t *uuid, uint8_t *uuid_extra, uint8_t ref_rssi,
 
 /**
  */
-uint8_t *altbeacon_get_adv_data(void);
+void altbeacon_get_adv_data(uint8_t *adv_data_ptr);
+
+/**
+ */
+uint8_t altbeacon_get_adv_data_size(void);
