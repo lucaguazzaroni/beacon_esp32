@@ -156,6 +156,11 @@ void beacon_advertiser_config(uint8_t adv_int_min, uint8_t adv_int_max){
 	ble_adv_params.adv_int_max = adv_int_max;
 }
 
+
+uint8_t beacon_get_type(void){
+    return type; 
+}
+
 uint8_t beacon_is_advertiser(void){
 	if(mode == BEACON_MODE_ADVERTISER){
 		return 1;
