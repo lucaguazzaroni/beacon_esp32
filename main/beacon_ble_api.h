@@ -8,6 +8,7 @@
 
 #define BEACON_TYPE_ALTBEACON 2
 #define BEACON_TYPE_IBEACON	  3	
+#define BEACON_TYPE_EDDYSTONE_UUID 4
 
 /**
  */
