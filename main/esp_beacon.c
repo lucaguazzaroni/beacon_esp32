@@ -36,59 +36,49 @@ void app_main()
     /* Config beacon_ble_api to work as an advertiser */
     beacon_ble_config(BEACON_MODE_ADVERTISER, BEACON_TYPE_EDDYSTONE_UUID);
     
-    /* set scan parameters */
-    if( beacon_is_scanner() )
-    {
-        beacon_scanner_start();
-    }
+    uint8_t *advertising_packet = NULL;     
+    uint8_t advertising_packet_size = 0;  
 
     /* set advertising data */
-    if( beacon_is_advertiser() )
+    beacon_advertiser_config(0x60, 0x80);
+
+    switch( beacon_get_type() )
     {
-        uint8_t *advertising_packet = NULL;     
-        uint8_t advertising_packet_size = 0;  
-
-        beacon_advertiser_config(0x60, 0x80);
-
-        switch( beacon_get_type() )
-        {
-            case BEACON_TYPE_ALTBEACON:
-                // if altbeacon_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
-                altbeacon_config_data(test_uuid, test_uuid_extra, 0xC3, 0x33); 
-                // get size of adv data
-                advertising_packet_size = altbeacon_get_adv_data_size(); 
-                // create array to store the advertising data
-                advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
-                // get advertising data from altbeacon_api 
-                altbeacon_get_adv_data(advertising_packet);
-                break;
-            case BEACON_TYPE_IBEACON:
-                // if altbeacon_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
-                ibeacon_config_data(test_uuid, 2000, 2003, 0xC3); 
-                // get size of adv data
-                advertising_packet_size = ibeacon_get_adv_data_size();  
-                // create array to store the advertising data
-                advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
-                // get advertising data from altbeacon_api 
-                ibeacon_get_adv_data(advertising_packet); 
-                break;
-            case BEACON_TYPE_EDDYSTONE_UUID:
-                // if eddystone_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
-                eddystone_config_data(test_namespace, test_instance, 0xC3); 
-                // get size of adv data
-                advertising_packet_size = eddystone_get_adv_data_size(); 
-                // create array to store the advertising data
-                advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
-                // get advertising data from altbeacon_api 
-                eddystone_get_adv_data(advertising_packet);
-                break;
-            default:
-                break;
-        } 
-        
-        // give to beacon_ble_api data to advertise
-        beacon_advertiser_start(advertising_packet, advertising_packet_size); 
-    }
+        case BEACON_TYPE_ALTBEACON:
+            // if altbeacon_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
+            altbeacon_config_data(test_uuid, test_uuid_extra, 0xC3, 0x33); 
+            // get size of adv data
+            advertising_packet_size = altbeacon_get_adv_data_size(); 
+            // create array to store the advertising data
+            advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
+            // get advertising data from altbeacon_api 
+            altbeacon_get_adv_data(advertising_packet);
+            break;
+        case BEACON_TYPE_IBEACON:
+            // if altbeacon_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
+            ibeacon_config_data(test_uuid, 2000, 2003, 0xC3); 
+            // get size of adv data
+            advertising_packet_size = ibeacon_get_adv_data_size();  
+            // create array to store the advertising data
+            advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
+            // get advertising data from altbeacon_api 
+            ibeacon_get_adv_data(advertising_packet); 
+            break;
+        case BEACON_TYPE_EDDYSTONE_UUID:
+            // if eddystone_config_data is not called, default values are going to be published when beacon_advertiser_start() is called
+            eddystone_config_data(test_namespace, test_instance, 0xC3); 
+            // get size of adv data
+            advertising_packet_size = eddystone_get_adv_data_size(); 
+            // create array to store the advertising data
+            advertising_packet = (uint8_t *)malloc(advertising_packet_size); 
+            // get advertising data from altbeacon_api 
+            eddystone_get_adv_data(advertising_packet);
+            break;
+        default:
+            break;
+    } 
     
+    // give to beacon_ble_api data to advertise
+    beacon_advertiser_start(advertising_packet, advertising_packet_size);     
 }
 
