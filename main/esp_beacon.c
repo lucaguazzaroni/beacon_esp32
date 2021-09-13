@@ -34,7 +34,7 @@ void app_main()
     beacon_ble_init();
 
     /* Config beacon_ble_api to work as an advertiser */
-    beacon_ble_config(BEACON_MODE_ADVERTISER, BEACON_TYPE_EDDYSTONE_UUID);
+    beacon_ble_config(BEACON_TYPE_EDDYSTONE_UUID);
     
     uint8_t *advertising_packet = NULL;     
     uint8_t advertising_packet_size = 0;  
