@@ -128,10 +128,6 @@ CONFIG_PARTITION_TABLE_MD5=y
 #
 # Beacon Example Configuration
 #
-CONFIG_BEACON_SENDER=y
-# CONFIG_BEACON_RECEIVER is not set
-CONFIG_BEACON_MODE=0
-# end of Beacon Example Configuration
 
 #
 # Compiler options
