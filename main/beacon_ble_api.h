@@ -3,8 +3,6 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define BEACON_MODE_ADVERTISER 0
-#define BEACON_MODE_SCANNER    1
 
 #define BEACON_TYPE_ALTBEACON 2
 #define BEACON_TYPE_IBEACON	  3	
@@ -21,18 +19,18 @@ void beacon_ble_init(void);
 /**
  *	@brief	Set the work mode.
  *
- *	@param	beacon_mode: to set beacon as advertiser or scanner.
  *	@param  beacon_type: to set beacon as eddystone, altbeacon or ibeacon
  *
  *	@return None
  */
-void beacon_ble_config(uint8_t beacon_mode, uint8_t beacon_type);
+void beacon_ble_config(uint8_t beacon_type);
 
 /**
- *	@brief	get the beacon type that is configured.
+ *	@brief	get what beacon type that is configured.
  *
- *	@return BEACON_MODE_ADVERTISER 
- *	@return BEACON_MODE_SCANNER
+ *	@return BEACON_TYPE_ALTBEACON 
+ *	@return BEACON_TYPE_IBEACON
+ *  @return BEACON_TYPE_EDDYSTONE_UUID
  */
 uint8_t beacon_get_type(void);
 
@@ -47,14 +45,6 @@ uint8_t beacon_get_type(void);
 void beacon_advertiser_config(uint8_t adv_int_min, uint8_t adv_int_max);
 
 /**
- *	@brief	To check if the beacon is configured as an advertiser.
- *
- *	@return True: beacon is an advertiser.
- *	@return False: beacon is not an advertiser.
- */
-uint8_t beacon_is_advertiser(void);
-
-/**
  *	@brief	Make the abeacon start advertising.
  *
  *	@param 	raw_adv_data 		vector with data thas has to be advertised.
@@ -63,28 +53,3 @@ uint8_t beacon_is_advertiser(void);
  *	@return None.
  */
 void beacon_advertiser_start(uint8_t *raw_adv_data, uint8_t raw_adv_data_size);
-
-/**
- *	@brief	When beacon is an scanner, set the scan window and the scan interval.
- *
- *	@param	scan_window 	
- *	@param 	scan_interval		
- *
- *	@return None
- */
-void beacon_scanner_config(uint8_t scan_window, uint8_t scan_interval);
-
-/**
- *	@brief	To check if the beacon is configured as an scanner.
- *
- *	@return True: beacon is an scanner.
- *	@return False: beacon is not an scanner.
- */
-uint8_t beacon_is_scanner(void);
-
-/**
- *	@brief Make the scanner start looking for beacons.
- *
- *	@return None.
- */
-void beacon_scanner_start(void);
