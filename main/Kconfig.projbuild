@@ -1,0 +1,26 @@
+menu "Beacon Example Configuration"
+
+    choice BEACON_MODE
+        bool "Beacon Mode"
+        default BEACON_SENDER
+        help
+            Select the Beacon Mode.
+
+        config BEACON_SENDER
+            bool "Beacon Sender Mode"
+            help
+                Select the Beacon Sender Mode.
+
+        config BEACON_RECEIVER
+            bool "Beacon Receiver Mode"
+            help
+                Select the Beacon Receiver Mode.
+
+    endchoice
+
+    config BEACON_MODE
+        int
+        default 0 if BEACON_SENDER
+        default 1 if BEACON_RECEIVER
+
+endmenu
